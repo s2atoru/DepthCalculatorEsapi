@@ -5,16 +5,50 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculator", "DepthCalculator\DepthCalculator.csproj", "{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculatorTest", "DepthCalculatorTest\DepthCalculatorTest.csproj", "{2B82148C-EC94-4BF2-BB54-66A184810C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinateTransform", "..\CoordinateTransform\CoordinateTransform\CoordinateTransform\CoordinateTransform.csproj", "{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculatorBinaryPlugin", "DepthCalculatorBinaryPlugin\DepthCalculatorBinaryPlugin.csproj", "{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Debug|x64.ActiveCfg = Debug|x64
+		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Debug|x64.Build.0 = Debug|x64
 		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Release|x64.ActiveCfg = Release|Any CPU
+		{B202AEC5-E055-42F1-B03D-4F7A5B4BDC69}.Release|x64.Build.0 = Release|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Debug|x64.ActiveCfg = Debug|x64
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Debug|x64.Build.0 = Debug|x64
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|x64.Build.0 = Release|Any CPU
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|x64.ActiveCfg = Debug|x64
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|x64.Build.0 = Debug|x64
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|x64.ActiveCfg = Release|x64
+		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|x64.Build.0 = Release|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.ActiveCfg = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.Build.0 = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|Any CPU.ActiveCfg = Release|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.ActiveCfg = Release|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
