@@ -1,0 +1,43 @@
+﻿<Window x:Class="Juntendo.MedPhys.Esapi.DepthCalculator.DepthCalculatorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Juntendo.MedPhys.Esapi.DepthCalculator"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+            Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock> Point Coordinate in cm </TextBlock>
+            <ComboBox Name="referencePointName" ItemsSource="{Binding ReferencePointNames}" SelectionChanged="ComboBox_SelectionChanged"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0"> x </TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1"> y </TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="2"> z </TextBlock>
+
+                <TextBox Text="{Binding XCoordinate}" Grid.Row="1" Grid.Column="0"></TextBox>
+                <TextBox Text="{Binding YCoordinate}" Grid.Row="1" Grid.Column="1"></TextBox>
+                <TextBox Text="{Binding ZCoordinate}" Grid.Row="1" Grid.Column="2"></TextBox>
+            </Grid>
+            <Button Content="Calculate" Click="Button_Click"></Button>
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding PointDepths}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Beam ID" Binding="{Binding BeamId}"/>
+                    <DataGridTextColumn Header="Depth" Binding="{Binding DepthValue, StringFormat=F2}"/>
+                    <DataGridTextColumn Header="Effective Depth" Binding="{Binding EffectiveDepthValue, StringFormat=F2}"/>
+                    <DataGridTextColumn Header="Field Dose" Binding="{Binding DoseValue, StringFormat=F2}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
