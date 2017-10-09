@@ -79,10 +79,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CoordinateTransform\CoordinateTransform\CoordinateTransform\CoordinateTransform.csproj">
-      <Project>{edf4e3bf-5f5b-40f3-8900-1abf795a4336}</Project>
-      <Name>CoordinateTransform</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DepthCalculator\DepthCalculator.csproj">
       <Project>{b202aec5-e055-42f1-b03d-4f7a5b4bdc69}</Project>
       <Name>DepthCalculator</Name>

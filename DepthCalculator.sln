@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculator", "DepthCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculatorTest", "DepthCalculatorTest\DepthCalculatorTest.csproj", "{2B82148C-EC94-4BF2-BB54-66A184810C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinateTransform", "..\CoordinateTransform\CoordinateTransform\CoordinateTransform\CoordinateTransform.csproj", "{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthCalculatorBinaryPlugin", "DepthCalculatorBinaryPlugin\DepthCalculatorBinaryPlugin.csproj", "{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinateTransform", "CoordinateTransform\CoordinateTransform.csproj", "{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +35,12 @@ Global
 		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|x64.ActiveCfg = Release|Any CPU
 		{2B82148C-EC94-4BF2-BB54-66A184810C8A}.Release|x64.Build.0 = Release|Any CPU
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.ActiveCfg = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.Build.0 = Debug|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|Any CPU.ActiveCfg = Release|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.ActiveCfg = Release|x64
+		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.Build.0 = Release|x64
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Debug|x64.ActiveCfg = Debug|x64
@@ -43,12 +49,6 @@ Global
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|x64.ActiveCfg = Release|x64
 		{EDF4E3BF-5F5B-40F3-8900-1ABF795A4336}.Release|x64.Build.0 = Release|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.ActiveCfg = Debug|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Debug|x64.Build.0 = Debug|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|Any CPU.ActiveCfg = Release|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.ActiveCfg = Release|x64
-		{94C3FC56-0D40-40A3-BA78-8FC9C1B987B3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
