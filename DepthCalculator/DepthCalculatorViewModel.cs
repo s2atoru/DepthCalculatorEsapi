@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
-using JunPhys.Medphys.BindableBase;
+using System.ComponentModel;
 
 namespace Juntendo.MedPhys.Esapi.DepthCalculator
 {
@@ -21,16 +21,29 @@ namespace Juntendo.MedPhys.Esapi.DepthCalculator
         public double DoseValue { get; set; } = 0.0;
     }
 
-    public class DepthCalculatorViewModel : BindableBase
+    public class DepthCalculatorViewModel : INotifyPropertyChanged
     {
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         /// <summary>
         /// x coordinate of a calculation point
         /// </summary>
         private double xCoordinate = 0.0;
         public double XCoordinate
         {
-            get { return xCoordinate; }
-            set { this.SetProperty(ref this.xCoordinate, value); }
+            set
+            {
+                if (xCoordinate != value)
+                {
+                    xCoordinate = value;
+                    OnPropertyChanged("XCoordinate");
+                }
+            }
+            get
+            {
+                return xCoordinate;
+            }
         }
         /// <summary>
         /// y coordinate of a calculation point
@@ -38,8 +51,18 @@ namespace Juntendo.MedPhys.Esapi.DepthCalculator
         private double yCoordinate = 0.0;
         public double YCoordinate
         {
-            get { return yCoordinate; }
-            set { this.SetProperty(ref this.yCoordinate, value); }
+            set
+            {
+                if (yCoordinate != value)
+                {
+                    yCoordinate = value;
+                    OnPropertyChanged("YCoordinate");
+                }
+            }
+            get
+            {
+                return yCoordinate;
+            }
         }
         /// <summary>
         /// z coordinate of a calculation point
@@ -47,8 +70,18 @@ namespace Juntendo.MedPhys.Esapi.DepthCalculator
         private double zCoordinate = 0.0;
         public double ZCoordinate
         {
-            get { return zCoordinate; }
-            set { this.SetProperty(ref this.zCoordinate, value); }
+            set
+            {
+                if (zCoordinate != value)
+                {
+                    zCoordinate = value;
+                    OnPropertyChanged("ZCoordinate");
+                }
+            }
+            get
+            {
+                return zCoordinate;
+            }
         }
         /// <summary>
         /// PlanSetup in Eclipse
@@ -133,5 +166,11 @@ namespace Juntendo.MedPhys.Esapi.DepthCalculator
             return;
 
         }
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
     }
 }
